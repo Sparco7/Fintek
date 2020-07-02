@@ -1,0 +1,213 @@
+/*************************************
+		BASIC SETUP
+*************************************/
+* {
+	background-color: 	#F8F8F8;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	/*background-color: #E8E8E8;*/
+	margin: auto 50px auto 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.left {
+	width: 294px;
+	margin-left: 50px;
+}
+
+
+.right {
+	margin-top: 55px;
+}
+
+
+.column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 700px;
+	margin-right: -19px;
+
+}
+
+
+.left h5 {
+	margin: 0;
+}
+
+
+.url h4 {
+	font-weight: 400;
+	margin-bottom: 73px;
+}
+
+h1 {
+	font-size: 56px;
+	font-weight: 350;
+	overflow-wrap: break-word;
+}
+
+p {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 145%;
+	margin: 0;
+}
+
+.text-para {
+	margin: 25px 0;
+}
+
+.card {
+	text-align: center;
+	margin-bottom: 26px;
+	width: 226px;
+}
+
+.card h3 {
+	margin: 7px;
+	font-weight: 400;
+}
+
+.card h5 {
+	margin: 1px;
+	font-weight: 100;
+}
+
+.photo img {
+	width: 226px;
+	height: auto;
+}
+
+/*************************************
+		MEDIA QUERIES
+*************************************/
+
+
+/* Tablets */
+@media only screen and (max-width: 1023px) {
+
+	.container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.left {
+		width: 778px;
+	}
+
+	.right {
+	}
+
+	.photo img {
+		width: 200px;
+		height: auto;
+	}
+
+	.row {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.column {
+		display: inline-block;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: row;
+		max-height: 160px;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	.text-para {
+		margin: 10px;
+		margin-right: 33px;
+
+	}
+
+	.card h5 {
+		font-weight: 100;
+	}
+
+	.photo img {
+		height: auto;
+		width: 100%;
+	}
+
+	p {
+		font-weight: 150%;
+		margin: 0;
+	}
+
+	h1 {
+		display: flex;
+  		justify-content: center;
+	}
+
+}
+
+
+/* Mobile Phones */
+@media only screen and (max-width: 520px) {
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 520px;
+	}
+
+	.left {
+		display: inline;
+		width: 100%;
+		justify-content: center;
+		margin-left: 0px;
+	}
+
+	.right {
+		display: inherit;
+		justify-content: center;
+		margin-bottom: 30px;
+		margin-top: 65px;
+		width: 100%;
+	}
+
+	.text {
+		display: block;
+		justify-content: center;
+		height: 100vh;
+	}
+
+	.card {
+		width: 70%;
+	}
+
+	.text-para  {
+		text-align: center;
+		margin-top: 22px;
+	}
+
+	.url h4 {
+		text-align: center;
+	}
+
+	h1 {
+		text-align: center;
+	}
+}
